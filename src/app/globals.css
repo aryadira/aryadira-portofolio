@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'NeueHaas';
+  src: url('../assets/fonts/neue_haas/NHaasGroteskTXPro-55Rg.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaas';
+  src: url('../assets/fonts/neue_haas/NHaasGroteskTXPro-65Md.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaas';
+  src: url('../assets/fonts/neue_haas/NHaasGroteskTXPro-75Bd.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
