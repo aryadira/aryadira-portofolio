@@ -1,3 +1,3 @@
 export default function Container({ children }: any) {
-  return <div className='px-[200px] w-full'>{children}</div>;
+  return <div className='container px-auto w-full'>{children}</div>;
 } 

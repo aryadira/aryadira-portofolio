@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import { NeueHaas } from "@/utils/custom-font";
 import { Inter } from "next/font/google";
+import Container from "@/layouts/container";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${NeueHaas.className} px-[200px]`}>
-        <Header />
-        {children}
+      <body className={`${NeueHaas.className} flex items-center flex-col px-[200px]`}>
+        <Container>
+          <Header />
+          {children}
+        </Container>
       </body>
     </html>
   );
