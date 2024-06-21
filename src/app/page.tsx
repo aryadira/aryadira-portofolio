@@ -1,3 +1,4 @@
+"use client";
 import { Art, Expertise, Intro, Project } from "@/components/sections";
 
 export default function Home() {

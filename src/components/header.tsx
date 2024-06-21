@@ -21,7 +21,7 @@ export default function Header() {
           </li>
         </div>
         <div className='nav-social-button flex gap-2 bg-[#EEEEEE] p-[10px] rounded-full'>
-          <Image src='/icons/linkedin2.png' alt='linkedin' width={24} height={24} quality={95} />
+          <Image src='/icons/linkedin.png' alt='linkedin' width={24} height={24} quality={95} />
           <Image src='/icons/instagram.png' alt='instagram' width={24} height={24} quality={95} />
           <Image src='/icons/github.png' alt='github' width={24} height={24} quality={95} />
         </div>

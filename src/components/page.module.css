@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 300px;
+  gap: 20vw;
+  margin-bottom: 300px;
+}
+
+.body{
+  font-size: 5vw;
+}
+
+.lineMask p{
+  margin: 0px;
+  font-weight: 700;
+  overflow: hidden;
+}
