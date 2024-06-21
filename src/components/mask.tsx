@@ -1,13 +1,12 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import styles from "./page.module.css";
 
-interface MaskText {
+interface Mask {
   className?: string;
   children: any;
 }
 
-export default function MaskText({ className, children }: MaskText) {
+export default function Mask({ className, children }: Mask) {
   const body = useRef(null);
   const isInView = useInView(body, { once: true, margin: "75%" });
 
@@ -22,9 +21,9 @@ export default function MaskText({ className, children }: MaskText) {
   return (
     <div ref={body}>
       <div className={`m-0 overflow-hidden ${className}`}>
-        <motion.p variants={animation} initial='initial' animate={isInView ? "enter" : ""}>
+        <motion.div variants={animation} initial='initial' animate={isInView ? "enter" : ""}>
           {children}
-        </motion.p>
+        </motion.div>
       </div>
     </div>
   );

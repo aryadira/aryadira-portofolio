@@ -2,11 +2,11 @@ import Image from "next/image";
 import { Flaviotte } from "@/utils/custom-font";
 import HorizontalLine from "../horizontal";
 import Label from "../label";
-import MaskText from "../maskText";
+import MaskText from "../mask";
 
 export default function Intro() {
   return (
-    <section id='intro' className='w-full pt-[100px]'>
+    <section id='intro' className='w-full pt-[100px] mt-[100px]'>
       <div className='intro-title text-[32px]'>
         <div className='text-black-2nd font-medium flex'>
           <MaskText>
@@ -18,14 +18,14 @@ export default function Intro() {
         </div>
         <MaskText className='text-black-2nd font-medium'>a person who excited with coding and design</MaskText>
       </div>
-      <div className='resume-link mt-10'>
+      <MaskText className='resume-link mt-10'>
         <a href='...' className='inline-flex items-center gap-1 hover:underline font-medium'>
           Resume{" "}
           <span>
             <Image src={"/icons/arrow.png"} width={12} height={12} alt='arrow' />
           </span>
         </a>
-      </div>
+      </MaskText>
       <HorizontalLine />
     </section>
   );
