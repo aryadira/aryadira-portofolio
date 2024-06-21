@@ -1,10 +1,12 @@
-import Image from "next/image";
-import Intro from "@/components/sections/intro";
+import { Art, Expertise, Intro, Project } from "@/components/sections";
 
 export default function Home() {
   return (
     <>
       <Intro />
+      <Expertise />
+      <Project />
+      <Art />
     </>
   );
 }

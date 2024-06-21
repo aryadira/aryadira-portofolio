@@ -19,11 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${NeueHaas.className} flex items-center flex-col px-[200px]`}>
-        <Container>
+      <body className={`${NeueHaas.className} flex items-center flex-col bg-white`}>
+        <div className='container px-auto w-full'>
           <Header />
           {children}
-        </Container>
+        </div>
       </body>
     </html>
   );
