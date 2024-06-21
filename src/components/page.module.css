@@ -1,18 +1,37 @@
-.container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 300px;
-  gap: 20vw;
-  margin-bottom: 300px;
-}
+/* text mask */
 
-.body{
-  font-size: 5vw;
-}
-
-.lineMask p{
+.lineMask p {
   margin: 0px;
   font-weight: 700;
   overflow: hidden;
+}
+
+/* loader */
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body {
+  width: 80%;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.loader {
+  height: calc(100vh + 200px);
+  width: 100%;
+  position: fixed;
+}
+
+.loader svg {
+  height: 100%;
+  width: 100%;
+}
+
+.loader svg path {
+  stroke: black;
+  stroke-width: 1px;
 }

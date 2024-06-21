@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/header";
 import { NeueHaas } from "@/utils/custom-font";
 import { Inter } from "next/font/google";
 
@@ -20,7 +19,6 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${NeueHaas.className} flex items-center flex-col bg-white`}>
         <div className='container mx-auto px-[20px] lg:px-[200px] w-full'>
-          <Header />
           {children}
         </div>
       </body>
