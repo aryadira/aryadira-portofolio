@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${NeueHaas.className} flex items-center flex-col w-screen`}>
         <Header />
-        <Container>{children}</Container>
+        <div className='container mx-auto px-[20px] lg:px-[200px] w-full'>{children}</div>
       </body>
     </html>
   );
