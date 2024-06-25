@@ -1,4 +1,4 @@
-export const categories = [
+export const projectCategories = [
   {
     name: "All",
   },
@@ -7,5 +7,17 @@ export const categories = [
   },
   {
     name: "UI/UX Design",
+  },
+];
+
+export const artCategories = [
+  {
+    name: "All",
+  },
+  {
+    name: "Paper",
+  },
+  {
+    name: "Digital",
   },
 ];

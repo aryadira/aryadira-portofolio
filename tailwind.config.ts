@@ -13,6 +13,7 @@ const config: Config = {
       },
       colors: {
         "black-2nd": "#4E4E4E",
+        "white-transparent": "rgba(250, 250, 252, 0.50)",
       },
     },
   },
