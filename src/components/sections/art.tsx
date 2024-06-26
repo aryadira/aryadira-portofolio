@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Button from "../button";
 import HorizontalLine from "../horizontal";
 import Label from "../label";
@@ -21,6 +22,24 @@ export default function Art() {
           {artCategories.map((category, index) => (
             <Button key={index}>{category.name}</Button>
           ))}
+        </div>
+      </Mask>
+      <Mask>
+        <div className='grid grid-cols-2 gap-5'>
+          <div className='card-art bg-white rounded-3xl mt-10'>
+            <img src='/arts/fubuki.png' alt='card-art' />
+            <div className='mt-3'>
+              <div className='title-art text-2xl font-bold'>Fubuki</div>
+              <div className='art-from text-base text-[#4E4E4E]'>One Punch Man</div>
+            </div>
+          </div>
+          <div className='card-art bg-white rounded-3xl mt-10'>
+            <img src='/arts/fubuki.png' alt='card-art' />
+            <div className='mt-3'>
+              <div className='title-art text-2xl font-bold'>Fubuki</div>
+              <div className='art-from text-base text-[#4E4E4E]'>One Punch Man</div>
+            </div>
+          </div>
         </div>
       </Mask>
       <HorizontalLine />
