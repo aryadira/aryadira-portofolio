@@ -1,3 +1,22 @@
-export default function Project() {
-  return <div>Project Page</div>;
+/* eslint-disable @next/next/no-img-element */
+"use client";
+import Image from "next/image";
+import Mask from "@/components/mask";
+import Project from "@/components/sections/project";
+
+export default function ProjectPage() {
+  return (
+    <div id='project' className='w-full pt-[100px] mt-[100px]'>
+      <div className='intro-title text-[32px]'>
+        <div className='text-black-2nd font-medium flex'>
+          <Mask className='text-black font-bold'>Project.</Mask>
+          <Mask className='star ml-2'>
+            <Image src='/icons/target.png' width={40} height={45} alt='star' />
+          </Mask>
+        </div>
+        <Mask className='text-black-2nd font-medium'>simple project with simple effort.</Mask>
+      </div>
+      <Project />
+    </div>
+  );
 }

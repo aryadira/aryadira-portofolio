@@ -39,7 +39,10 @@ export default function Project() {
   ];
 
   return (
-    <section className='w-full'>
+    <section id='project' className='w-full pt-10'>
+      <Mask>
+        <HorizontalLine />
+      </Mask>
       <Mask>
         <div className='flex justify-between items-center'>
           <Label type='icon'>Project</Label>
@@ -85,7 +88,7 @@ export default function Project() {
                   <img src={project.img} className='w-full h-full' alt='image' />
                   <div className='w-full stack-project bg-white-transparent absolute bottom-0 mb-2 sm:mb-4 flex item-cemter justify-start py-[10px] px-[10px] border border-[#E3E3E3] rounded-full backdrop-blur-md'>
                     {project.stacks.map((stack, index) => (
-                      <Label type='image' src={stack.icon} key={index} className="text-xs sm:text-base">
+                      <Label type='image' src={stack.icon} key={index} className='text-xs sm:text-base'>
                         {stack.name}
                       </Label>
                     ))}
@@ -96,9 +99,6 @@ export default function Project() {
           </Mask>
         ))}
       </div>
-      <Mask>
-        <HorizontalLine />
-      </Mask>
     </section>
   );
 }

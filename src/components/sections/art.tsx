@@ -7,12 +7,15 @@ import Mask from "../mask";
 
 export default function Art() {
   return (
-    <section className='w-full'>
+    <section id='art' className='w-full pt-10'>
+      <Mask>
+        <HorizontalLine />
+      </Mask>
       <Mask className='text-black-2nd font-medium text-5xl mb-10'>I love art especially with my hands.</Mask>
       <Mask>
         <div className='flex justify-between items-center'>
           <Label type='icon'>Art</Label>
-          <Label type='link' link='/art'>
+          <Label type='link' link='/arts'>
             See All
           </Label>
         </div>
@@ -42,7 +45,6 @@ export default function Art() {
           </div>
         </div>
       </Mask>
-      <HorizontalLine />
     </section>
   );
 }

@@ -6,7 +6,7 @@ import Mask from "../mask";
 
 export default function Intro() {
   return (
-    <section id='intro' className='w-full pt-[100px] mt-[100px]'>
+    <section id='home' className='w-full pt-[200px]'>
       <div className='intro-title text-[32px]'>
         <div className='text-black-2nd font-medium flex'>
           <Mask>
@@ -26,7 +26,6 @@ export default function Intro() {
           </span>
         </a>
       </Mask>
-      <HorizontalLine />
     </section>
   );
 }

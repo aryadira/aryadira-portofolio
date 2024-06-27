@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'NeueHaas';
   src: url('../assets/fonts/neue_haas/NHaasGroteskTXPro-55Rg.ttf') format('truetype');
