@@ -25,16 +25,16 @@ export default function Art() {
         </div>
       </Mask>
       <Mask>
-        <div className='grid grid-cols-2 gap-5'>
+        <div className='w-full grid grid-cols-1 sm:grid-cols-2 gap-7'>
           <div className='card-art bg-white rounded-3xl mt-10'>
-            <img src='/arts/fubuki.png' alt='card-art' />
+            <img src='/arts/fubuki.png' alt='card-art' className='w-full' />
             <div className='mt-3'>
               <div className='title-art text-2xl font-bold'>Fubuki</div>
               <div className='art-from text-base text-[#4E4E4E]'>One Punch Man</div>
             </div>
           </div>
           <div className='card-art bg-white rounded-3xl mt-10'>
-            <img src='/arts/fubuki.png' alt='card-art' />
+            <img src='/arts/fubuki.png' alt='card-art' className='w-full' />
             <div className='mt-3'>
               <div className='title-art text-2xl font-bold'>Fubuki</div>
               <div className='art-from text-base text-[#4E4E4E]'>One Punch Man</div>

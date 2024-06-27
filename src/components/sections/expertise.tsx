@@ -10,7 +10,7 @@ export default function Expertise() {
       <MaskText>
         <Label type='icon'>Expertise</Label>
       </MaskText>
-      <div className='mt-11 flex justify-between items-center flex-wrap gap-4'>
+      <div className='mt-11 flex  sm:justify-between items-center flex-wrap gap-1 sm:gap-4'>
         {expertises.map((expertise, index) => (
           <Mask key={index}>
             <Label type='image' src={expertise.image}>
