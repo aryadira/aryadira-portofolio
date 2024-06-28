@@ -1,3 +1,47 @@
-export default function About() {
-  return <div>About Page</div>;
+"use client";
+import Image from "next/image";
+import Mask from "@/components/mask";
+import Label from "@/components/label";
+import HorizontalLine from "@/components/horizontal";
+
+export default function page() {
+  return (
+    <div id='about' className='w-full pt-[200px]'>
+      <div className='flex justify-between items-center'>
+        <div className='left-side w-[40%]'>
+          <div className='intro-title text-[32px]'>
+            <div className='text-black-2nd font-medium flex leading-loose'>
+              <Mask>
+                <span className='font-bold text-black text-[40px]'>Arya Dira Hernanda</span>
+              </Mask>
+            </div>
+            <Mask className='text-black-2nd font-medium text-2xl'>Hello i’m Arya. I’m a passionate in Software Development and Design. </Mask>
+          </div>
+          <Mask className='resume-link mt-10'>
+            <a href='...' className='inline-flex items-center gap-1 hover:underline font-medium'>
+              Resume{" "}
+              <span>
+                <Image src={"/icons/arrow.png"} width={12} height={12} alt='arrow' />
+              </span>
+            </a>
+          </Mask>
+        </div>
+        <div className='right-side'>
+          <Mask>
+            <Image src={"/about/left-side-profile.png"} width={191} height={100} alt='arrow' className='inline mx-1' />
+            <Image src={"/about/mid-side-profile.png"} width={226} height={100} alt='arrow' className='inline mx-1' />
+            <Image src={"/about/right-side-profile.png"} width={154} height={100} alt='arrow' className='inline mx-1' />
+          </Mask>
+        </div>
+      </div>
+      <div id='education' className='w-full pt-10'>
+        <Mask>
+          <HorizontalLine />
+        </Mask>
+        <Mask>
+          <Label type='icon'>Education</Label>
+        </Mask>
+      </div>
+    </div>
+  );
 }

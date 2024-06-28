@@ -4,9 +4,9 @@ import Image from "next/image";
 import Mask from "@/components/mask";
 import Project from "@/components/sections/project";
 
-export default function ProjectPage() {
+export default function page() {
   return (
-    <div id='project' className='w-full pt-[100px] mt-[100px]'>
+    <div id='project' className='w-full pt-[200px]'>
       <div className='intro-title text-[32px]'>
         <div className='text-black-2nd font-medium flex'>
           <Mask className='text-black font-bold'>Project.</Mask>

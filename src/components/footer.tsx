@@ -14,25 +14,25 @@ export default function Footer() {
         <div>
           <Mask className='text-black-2nd font-medium text-5xl mb-5'>Let’s Drink Coffee with Me</Mask>
           <div className='gmail-text text-xl text-[#4E4E4E] font-medium flex items-center'>
-            <span className='mr-2'>
+            <Mask className='mr-2'>
               <img src='/icons/gmail.png' alt='gmail' />
-            </span>
-            <p>aryadyra27@gmail.com</p>
+            </Mask>
+            <Mask>aryadyra27@gmail.com</Mask>
           </div>
         </div>
         <div className='footer-copyright flex justify-between items-center pt-5 pb-10'>
           <div className='art-from text-base sm:text-lg text-[#4E4E4E] font-medium flex items-center justify-between'>
-            <p>Made with</p>
-            <span className='mx-2'>
+            <Mask>Made with</Mask>
+            <Mask className='mx-2'>
               <img src='/icons/love.png' alt='gmail' />
-            </span>
-            <p>by @aryaadrh</p>
+            </Mask>
+            <Mask>by @aryaadrh</Mask>
           </div>
           <div className='art-from text-base sm:text-lg text-[#4E4E4E] font-medium flex items-center'>
-            <p>@2024</p>
+            <Mask>@2024</Mask>
           </div>
           <div className='art-from text-base sm:text-lg text-[#4E4E4E] font-medium sm:flex items-center hidden'>
-            <p>East Jakarta, Indonesia</p>
+            <Mask>East Jakarta, Indonesia</Mask>
           </div>
         </div>
       </Container>

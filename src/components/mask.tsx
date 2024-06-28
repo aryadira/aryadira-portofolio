@@ -13,7 +13,7 @@ export default function Mask({ className, children }: Mask) {
   const animation = {
     initial: { y: "100%" },
 
-    enter: (i: any) => ({ y: "0", transition: { duration: 1.2, ease: [0.33, 1, 0.68, 1], delay: 0.1 * i } }),
+    enter: (i: any) => ({ y: "0", transition: { duration: 1.5, ease: [0.33, 1, 0.68, 1], delay: 0.1 * i } }),
   };
 
   return (
