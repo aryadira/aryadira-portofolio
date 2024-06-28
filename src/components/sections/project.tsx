@@ -65,7 +65,7 @@ export default function Project() {
               <div className='container px-10 md:px-[100px] pt-[50px]'>
                 <div className='group-title flex items-center gap-3'>
                   <div className='title-project text-xl sm:text-[32px] font-medium'>{project.name}</div>
-                  <div className='text-[12px] inline-flex py-[5px] px-[10px] gap-[10px] bg-[#6E6BFF] text-white items-center justify-center rounded-full '>
+                  <div className='text-[12px] inline py-[2px] px-[10px] gap-[10px] bg-[#6E6BFF] text-white rounded-full '>
                     {project.category}
                   </div>
                 </div>
